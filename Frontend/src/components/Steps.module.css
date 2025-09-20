@@ -1,0 +1,46 @@
+.container {
+  background-color:white;
+  width: 100%;
+  padding: 23px;
+  padding-top: 55px;
+  padding-bottom: 55px;
+  text-align: center;
+  /* background-color: gray; */
+  
+  min-height: 80vh;
+}
+h5{
+    margin-top: 34px;
+    margin-bottom: 22px;
+}
+.CardContainer {
+  display: flex;
+  flex-direction: column;
+  /* background-color: white; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 400px;
+  height: 300px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.myCont{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    margin-top: 30px;
+}
+.step{
+    /* background-color: white; */
+    border-radius: 50%;
+    width: 70px;
+    margin-bottom: 28px;
+    height: 70px;  
+    gap: 12px;
+    display: flex;
+    background-color: aquamarine;
+    justify-content: center;
+    align-items: center;
+}
