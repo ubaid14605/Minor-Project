@@ -1,11 +1,13 @@
 import Header from "./components/Header";
-import Hero from "./components/hero";
+import Slider from "./components/Slider";
+import Hero from "./components/Hero";
 import Steps from "./components/Steps";
 import Features from "./components/Features";
 import Footer from "./components/Footer";
 function App() {
   return <>
     <Header></Header>
+    <Slider></Slider>
     <Hero></Hero>
     <Steps></Steps>
     <Features></Features>
