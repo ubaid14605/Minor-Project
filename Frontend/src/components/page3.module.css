@@ -1,0 +1,94 @@
+.contentSection {
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  margin-top: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.subHeading {
+  font-size: 20px;
+  font-weight: 600;
+  color: #555;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.contentSection p {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.formula {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #f7f9fc;
+  border-left: 4px solid #3983f4;
+  padding: 10px 15px;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.exampleList, .prosList {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.exampleList li, .prosList li {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.prosList li::before {
+  content: '•';
+  color: #3983f4;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.faqSection {
+  margin-top: 20px;
+}
+
+.faqItem {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.faqItem:hover {
+  background-color: #f7f9fc;
+}
+
+.faqQuestion {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+}
+
+.faqIcon {
+  font-size: 24px;
+  color: #555;
+}

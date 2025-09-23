@@ -1,135 +1,90 @@
+import React from 'react';
+import styles from './Footer.module.css';
+import { FaFacebook, FaTwitter, FaLinkedin, FaInstagram } from 'react-icons/fa';
+
+
 function Footer() {
   return (
     <>
-      <footer style={{backgroundColor:"#ECE4F6"}} class="py-5">
-        {" "}
-        <div class="row">
-          {" "}
-          <div class="col-6 col-md-2 mb-3">
-            {" "}
-            <h5>Services</h5>{" "}
-            <ul class="nav flex-column">
-              {" "}
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">
-                  Loan Comparison
-                </a>
-              </li>{" "}
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">
-                  Interest Analysis
-                </a>
-              </li>{" "}
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">
-                  Eligibility Checker
-                </a>
-              </li>{" "}
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">
-                Assistance
-                </a>
-              </li>{" "}
-            </ul>{" "}
-          </div>{" "}
-          <div class="col-6 col-md-2 mb-3">
-            {" "}
-            <h5>Resources</h5>{" "}
-            <ul class="nav flex-column">
-              {" "}
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">
-                Loan Guides
-                </a>
-              </li>{" "}
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">
-                  Financial Tips
-                </a>
-              </li>{" "}
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">
-                  Planning
-                </a>
-              </li>{" "}
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">
-                  Success Stories
-                </a>
-              </li>{" "}
-            </ul>{" "}
-          </div>{" "}
-          <div class="col-6 col-md-2 mb-3">
-            {" "}
-            <h5>Support</h5>{" "}
-            <ul class="nav flex-column">
-              {" "}
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">
-                  Help Center
-                </a>
-              </li>{" "}
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">
-                  Contact Us
-                </a>
-              </li>{" "}
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">
-                  Privacy Policy
-                </a>
-              </li>{" "}
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">
-                  Terms of Service
-                </a>
-              </li>{" "}
-            </ul>{" "}
-          </div>{" "}
-          <div class="col-md-5 offset-md-1 mb-3">
-            {" "}
-            <form>
-              {" "}
-              <h5>Subscribe to our newsletter</h5>{" "}
-              <p>Monthly digest of what's new and exciting from us.</p>{" "}
-              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                {" "}
-                <label for="newsletter1" class="visually-hidden">
-                  Email address
-                </label>{" "}
-                <input
-                  id="newsletter1"
-                  type="email"
-                  class="form-control"
-                  placeholder="Email address"
-                />{" "}
-                <button class="btn btn-primary" type="button">
-                  Subscribe
-                </button>{" "}
-              </div>{" "}
-            </form>{" "}
-          </div>{" "}
-        </div>{" "}
-        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-          <p>© 2025 Project, Loan Buddy.</p>{" "}
-          <ul class="list-unstyled d-flex">
-            <li class="ms-3">
-              <a class="link-body-emphasis" href="#" aria-label="Instagram">
-                <svg class="bi" width="24" height="24">
-                  <use xlink:href="#instagram"></use>
-                </svg>
-              </a>
-            </li>{" "}
-            <li class="ms-3">
-              <a class="link-body-emphasis" href="#" aria-label="Facebook">
-                <svg class="bi" width="24" height="24" aria-hidden="true">
-                  <use xlink:href="#facebook"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+     <footer className={styles.footer}>
+      <div className={styles.topSection}>
+        <div className={styles.companyInfo}>
+          <h2 className={styles.logo}>LoanCompare</h2>
+          <p className={styles.tagline}>
+            Your trusted partner in finding the perfect loan. We connect you with 50+
+            top lenders to ensure you get the best rates and terms for your financial
+            needs.
+          </p>
+          <div className={styles.socialIcons}>
+            <a href="https://facebook.com" aria-label="Facebook"><FaFacebook /></a>
+            <a href="https://twitter.com" aria-label="Twitter"><FaTwitter /></a>
+            <a href="https://linkedin.com" aria-label="LinkedIn"><FaLinkedin /></a>
+            <a href="https://instagram.com" aria-label="Instagram"><FaInstagram /></a>
+          </div>
+          <p className={styles.contactInfo}>1-800-LOANCOMPARE (1-800-562-6266)</p>
+          <p className={styles.contactInfo}>support@loancompare.com</p>
+          <p className={styles.contactInfo}>Monday - Friday: 8AM - 8PM EST</p>
         </div>
-      </footer>
+
+        <div className={styles.linksSection}>
+          <div className={styles.linkColumn}>
+            <h3 className={styles.columnTitle}>Loan Types</h3>
+            <ul className={styles.linkList}>
+              <li><a href="/personal-loans">Personal Loans</a></li>
+              <li><a href="/auto-loans">Auto Loans</a></li>
+              <li><a href="/mortgages">Mortgages</a></li>
+              <li><a href="/business-loans">Business Loans</a></li>
+              <li><a href="/student-loans">Student Loans</a></li>
+              <li><a href="/home-equity-loans">Home Equity Loans</a></li>
+            </ul>
+          </div>
+          
+          <div className={styles.linkColumn}>
+            <h3 className={styles.columnTitle}>Resources</h3>
+            <ul className={styles.linkList}>
+              <li><a href="/loan-calculator">Loan Calculator</a></li>
+              <li><a href="/credit-score-guide">Credit Score Guide</a></li>
+              <li><a href="/financial-blog">Financial Blog</a></li>
+              <li><a href="/faq">FAQ</a></li>
+              <li><a href="/contact-support">Contact Support</a></li>
+              <li><a href="/compare-lenders">Compare Lenders</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div className={styles.newsletterSection}>
+        <div className={styles.newsletterContent}>
+          <h3 className={styles.newsletterTitle}>Stay Updated on Loan Rates</h3>
+          <p className={styles.newsletterText}>Get weekly updates on the best loan rates and exclusive offers from our lender partners.</p>
+          <form className={styles.newsletterForm}>
+            <input 
+              type="email" 
+              placeholder="Enter your email" 
+              className={styles.emailInput} 
+            />
+            <button type="submit" className={styles.subscribeButton}>Subscribe</button>
+          </form>
+          <p className={styles.spamNotice}>No spam, unsubscribe at any time. Privacy policy applies.</p>
+        </div>
+      </div>
+
+      <div className={styles.bottomSection}>
+        <div className={styles.copyrightSection}>
+          <p>© 2024 LoanCompare. All rights reserved.</p>
+          <div className={styles.bottomLinks}>
+            <a href="/privacy-policy">Privacy Policy</a>
+            <a href="/terms-of-service">Terms of Service</a>
+            <a href="/accessibility">Accessibility</a>
+            <a href="/made-with-readdy">Made with Readdy</a>
+          </div>
+        </div>
+        <p className={styles.disclaimer}>
+          Important Disclaimer: LoanCompare is a loan marketplace that connects borrowers with lenders. We are not a lender and do not make credit decisions. Loan approval and terms are subject to lender requirements.
+          Rates shown are estimates and may vary based on creditworthiness and other factors. All loans are subject to credit approval and verification of information.
+        </p>
+      </div>
+    </footer>
       ;
     </>
   );

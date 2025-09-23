@@ -20,8 +20,8 @@ function Slider() {
             </div>
             
             <div className={styles.buttonBox}>
-                <button>Start Comparison</button>
-                <button>Learn More</button>
+                <div className={styles.start}>Start Comparison</div>
+                <div className={styles.learn}>Learn More</div>
             </div>
           </div>
           <div className={styles.container3} >col1</div>
