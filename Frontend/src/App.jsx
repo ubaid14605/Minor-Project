@@ -1,25 +1,16 @@
-import Header from "./components/Header";
-import Slider from "./components/Slider";
-import Hero from "./components/Hero";
-import Steps from "./components/Steps";
-import Features from "./components/Features";
-// import Calculator from "./components/Calculator";
-import Footer from "./components/Footer";
-// import Page3 from "./components/page3";
+import Page1 from "./components/Page1";
+import Page2 from "./Page2";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
-  return <>
-    <Header></Header>
-    <Slider></Slider>
-    <Hero></Hero>
-    <Steps></Steps>
-    <Features></Features>
-    <Footer></Footer>
-    {/* <Calculator></Calculator> */}
-{/* <Page3></Page3> */}
-    {/* <Footer></Footer> */}
+  return (
+    <>
+      <Routes>
+        <Route path="/" element={<Page1 />} />
 
-    
-  </>
+        <Route path="/calculator" element={<Page2 />} />
+      </Routes>
+    </>
+  );
 }
 export default App;
