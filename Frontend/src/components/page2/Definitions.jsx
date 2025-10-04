@@ -1,4 +1,4 @@
-import styles from './page3.module.css';
+import styles from './Definitions.module.css'
 
 const ContentSection = () => {
   return (

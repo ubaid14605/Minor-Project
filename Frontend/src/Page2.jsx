@@ -1,12 +1,15 @@
-import Page3 from "./components/Page3"
-import Calculator from "./components//Calculator"
-import Footer from "./components/Footer"
-function Page2(){
-    return <>
-    <Calculator></Calculator>
-<Page3></Page3>
-    <Footer></Footer>
-
+import Definitons from './components/page2/Definitions';
+import Header from "./components/page1/Header";
+import Calculator from "./components/page2/Calculator";
+import Footer from "./components/page1/Footer";
+function Page2() {
+  return (
+    <>
+      <Header></Header>
+      <Calculator></Calculator>
+      <Definitons></Definitons>
+      <Footer></Footer>
     </>
+  );
 }
 export default Page2;

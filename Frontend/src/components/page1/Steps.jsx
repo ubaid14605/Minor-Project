@@ -1,4 +1,4 @@
-import styles from "/src/components/Steps.module.css";
+import styles from "./Steps.module.css";
 
 function Steps() {
   return (

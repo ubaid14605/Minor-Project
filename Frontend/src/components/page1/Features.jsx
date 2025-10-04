@@ -1,4 +1,4 @@
-import styles from "/src/components/Features.module.css";
+import styles from "./Features.module.css";
 function Features() {
   return (
     <>
