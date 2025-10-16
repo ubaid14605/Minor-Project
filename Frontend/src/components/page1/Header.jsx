@@ -1,4 +1,4 @@
-import styles from './Header.module.css'
+import styles from "./Header.module.css";
 
 const Header = () => {
   return (
@@ -8,12 +8,22 @@ const Header = () => {
         <span>LoanFinder</span>
       </div>
       <nav className={styles.nav}>
-        <a href="/" className={styles.navLink}>Home</a>
-        <a href="/compare" className={styles.navLink}>Compare Loans</a>
-        <a href="/calculator" className={`${styles.navLink} ${styles.active}`}>Calculator</a>
-        <a href="/resources" className={styles.navLink}>Resources</a>
+        <a href="/" className={styles.navLink}>
+          Home
+        </a>
+        <a href="/compare" className={styles.navLink}>
+          Compare Loans
+        </a>
+        <a href="/calculator" className={`${styles.navLink} ${styles.active}`}>
+          Calculator
+        </a>
+        <a href="/resources" className={styles.navLink}>
+          Resources
+        </a>
       </nav>
-      <button className={styles.getStartedBtn}>Get Started</button>
+      <button className={styles.getStartedBtn}>
+        <a href="/login">Login</a>
+      </button>
     </header>
   );
 };

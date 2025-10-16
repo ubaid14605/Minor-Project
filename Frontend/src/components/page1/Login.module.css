@@ -1,0 +1,325 @@
+/* src/components/Login/Login.module.css */
+body {
+  background-image: url("https://readdy.ai/api/search-image?query=diverse%20group%20of%20happy%20successful%20students%20celebrating%20graduation%20with%20diplomas%20in%20modern%20university%20campus%20setting%20with%20beautiful%20architecture%20and%20natural%20lighting%20representing%20educational%20achievement%20and%20financial%20success&width=600&height=600&seq=hero2&orientation=squarish");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* background-color: #f5f7fa; Light background */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+}
+
+/* --- Header Styling --- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #1877f2; /* EduLoan blue */
+}
+
+.logo img {
+  height: 30px; /* Adjust logo size */
+  margin-right: 8px;
+}
+
+.mainNav {
+  display: flex;
+  gap: 2rem;
+}
+
+.navLink {
+  text-decoration: none;
+  color: #555;
+  font-weight: 500;
+  transition: color 0.2s ease-in-out;
+}
+
+.navLink:hover {
+  color: #1877f2;
+}
+
+.userControls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  color: #777;
+  cursor: pointer;
+}
+
+.userIcon {
+  /* For actual icons, use an icon font or SVG */
+  font-size: 1.5rem;
+}
+
+.dropdownArrow {
+  font-size: 0.8rem;
+}
+
+/* --- Main Content & Login Card --- */
+.mainContent {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.loginCard {
+  background: #fff;
+  /* padding: 3rem 4rem; */
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  padding-top: 24px;
+  max-width: 450px; /* Adjust width as per image */
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.avatarPlaceholder {
+  background-color: #e0f2f7; /* Light blue background for avatar */
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1.5rem auto;
+}
+
+.avatarIcon {
+  font-size: 3rem;
+  color: #1877f2; /* EduLoan blue for avatar icon */
+}
+
+.welcomeTitle {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.subText {
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+.errorMessage,
+.successMessage {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.errorMessage {
+  background-color: #fbe2e2; /* Light red */
+  color: #cc0000; /* Darker red */
+  border: 1px solid #e0b1b1;
+}
+
+.successMessage {
+  background-color: #e2fbe2; /* Light green */
+  color: #008000; /* Darker green */
+  border: 1px solid #b1e0b1;
+}
+
+.formGroup {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.inputWrapper {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 0.75rem 1rem; /* Adjust padding to match design */
+  background-color: #f9f9f9;
+}
+
+.inputWrapper:focus-within {
+  border-color: #1877f2;
+  box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
+}
+
+.inputIcon {
+  margin-right: 10px;
+  color: #888;
+  font-size: 1.2rem;
+}
+
+.formGroup input {
+  flex-grow: 1;
+  border: none;
+  outline: none;
+  padding: 0; /* Reset input's own padding */
+  background-color: transparent;
+  font-size: 1rem;
+  color: #333;
+}
+
+.formGroup input::placeholder {
+  color: #bbb;
+}
+
+.optionsGroup {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+.rememberMe {
+  display: flex;
+  align-items: center;
+}
+
+.rememberMe input[type="checkbox"] {
+  margin-right: 8px;
+  accent-color: #1877f2; /* Color for the checkbox */
+}
+
+.forgotPassword {
+  color: #1877f2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.forgotPassword:hover {
+  text-decoration: underline;
+}
+
+.signInButton {
+  width: 100%;
+  padding: 1rem;
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.signInButton:hover {
+  background-color: #166fe5;
+}
+
+.signUpPrompt {
+  margin-top: 2rem;
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.signUpLink {
+  color: #1877f2;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.signUpLink:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 2.5rem 0;
+  color: #999;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #eee;
+}
+
+.divider:not(:empty)::before {
+  margin-right: 1.5rem;
+}
+
+.divider:not(:empty)::after {
+  margin-left: 1.5rem;
+}
+
+.socialLogins {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem; /* Space between buttons */
+}
+
+.socialButton {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8rem 1.2rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  color: #555;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.socialButton:hover {
+  background-color: #eee;
+  border-color: #ccc;
+}
+
+.socialIcon {
+  height: 20px; /* Adjust icon size */
+  margin-right: 10px;
+}
+
+/* --- Chatbot Widget --- */
+.chatbotWidget {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background-color: #1c1e21; /* Dark background */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+.chatbotIcon {
+  font-size: 1.2rem;
+}
